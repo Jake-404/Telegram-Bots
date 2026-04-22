@@ -80,7 +80,7 @@ async def main():
     await post_next()
 
     scheduler = AsyncIOScheduler()
-    scheduler.add_job(post_next, "interval", hours=1)
+    scheduler.add_job(post_next, "interval", hours=2)
     scheduler.start()
 
     try:
